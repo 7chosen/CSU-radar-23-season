@@ -1,4 +1,18 @@
-本程序使用大恒工业相机
+Robomaster2023 CSU FYT Radar 
+
+# 前提
+
+本程序使用大恒工业相机，模型使用`YOLOv7`
+
+# 文件结构
+
++ models 存储`yolov7 backbone`
++ Serial 串口部分
++ sources 资源文件
++ DahengSDK 大恒相机驱动
++ yolov7 目标检测
++ adjustAngle.py 仿射变换
++ mainApp.py 主程序
 
 # 使用
 
@@ -17,7 +31,7 @@
 
 总计四个点，将相机中实际点按下图从左至右的顺序进行标点，若标注不准确可任意点满四点等标定窗口关闭后再按`R`键进行重新标点
 
-![标定点](D:\DATA\FYT23\FYT23Radar\sources\标定.jpg)
+![标定点](sources\标定.jpg)
 
 若相机视角调整完毕并且标定完毕，`ESC`退出即可，准备运行下一步程序
 
@@ -50,3 +64,4 @@ ser -str 串口号，windows下一般为"COM5"/"COM6"
 
 显示己方地图 mainApp.py 注释掉 DEBUG plot
 
+**特别感谢 [上海交通大学雷达站开源](https://github.com/COMoER/LCR_sjtu)**
