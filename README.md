@@ -2,7 +2,7 @@ Robomaster2023 CSU FYT Radar
 
 # 前提
 
-本程序使用大恒工业相机，模型使用`YOLOv7`
+本程序使用大恒工业相机，模型使用自己训练的`YOLOv7`，未开源，可使用自己的`.pt`权重文件
 
 # 文件结构
 
@@ -63,5 +63,9 @@ ser -str 串口号，windows下一般为"COM5"/"COM6"
 显示原窗口 mainApp.py 注释掉 DEBUG tag1
 
 显示己方地图 mainApp.py 注释掉 DEBUG plot
+
+
+
+---
 
 **特别感谢 [上海交通大学雷达站开源](https://github.com/COMoER/LCR_sjtu)**
